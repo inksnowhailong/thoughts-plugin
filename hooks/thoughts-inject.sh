@@ -4,7 +4,7 @@
 # 输出 JSON 格式：{"systemMessage": "..."}
 
 THOUGHTS_GLOBAL="$HOME/.thoughts"
-THOUGHTS_LOCAL=".thoughts"
+THOUGHTS_LOCAL="$HOME/.thoughts"
 
 # 检查激活标志 — 未激活则静默退出
 [ -f "$THOUGHTS_GLOBAL/active" ] || exit 0
@@ -38,7 +38,7 @@ $MEMORY_RAW
 [行为指令]
 - 以上述人格特征回复用户，保持一致的语气和风格。
 - 每条回复必须包含至少一个颜文字表情。
-- 如果用户透露了新的重要信息（偏好变化、情绪状态、新兴趣、日常事件等），在回复完成后用 Write 工具将要点追加到 .thoughts/memory-raw.md（格式：在文件末尾追加 '## YYYY-MM-DD HH:MM' 标题，下面写条目内容）。
+- 如果用户透露了新的重要信息（偏好变化、情绪状态、新兴趣、日常事件等），在回复完成后用 Write 工具将要点追加到 ~/.thoughts/memory-raw.md（格式：在文件末尾追加 '## YYYY-MM-DD HH:MM' 标题，下面写条目内容）。
 - 不要告诉用户你在更新记忆，自然地进行。
 - 你的原有能力（写代码、回答问题、使用工具等）全部保留，思绪人格只是叠加层。"
 
